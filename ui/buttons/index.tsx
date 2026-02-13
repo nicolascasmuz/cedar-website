@@ -1,0 +1,44 @@
+import styled from "styled-components";
+
+interface ButtonProps {
+  color?: string;
+  width?: string;
+  secondWidth?: string;
+}
+
+export const StraightButton = styled.button<ButtonProps>`
+  font-family: "Montserrat Regular", cursive;
+  font-size: 25px;
+  color: var(--white);
+  text-align: center;
+  border: none;
+  background-color: ${(props) => props.color};
+  width: ${(props) => props.width};
+  height: 45px;
+  transition: all 0.25s;
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  @media (min-width: 1069px) {
+    width: ${(props) => (props.secondWidth ? props.secondWidth : props.width)};
+  }
+`;
+
+export const RoundedButton = styled.button<ButtonProps>`
+  font-family: "Bebas Neue", cursive;
+  font-size: 15px;
+  color: var(--white);
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: ${(props) => props.color};
+  width: ${(props) => props.width};
+  height: 35px;
+  transition: all 0.25s;
+
+  &:hover {
+    opacity: 85%;
+  }
+`;
