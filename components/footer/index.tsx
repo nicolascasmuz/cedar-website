@@ -10,9 +10,7 @@ export function Footer() {
     <div className={styles["footer"]}>
       <div className={styles["footer-logo-copyright"]}>
         <Logo />
-        <h6 className={styles["footer-copyright"]}>
-          © 2025 Nico's Instruments
-        </h6>
+        <h6 className={styles["footer-copyright"]}>© 2026 Cedar Sublimación</h6>
       </div>
       <div className={styles["footer-socialmedia"]}>
         <a
