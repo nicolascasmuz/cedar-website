@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Input = styled.input`
   font-family: "Montserrat Regular", cursive;
   font-size: 30px;
-  color: var(--white);
-  background-color: var(--black);
-  border: none;
+  color: var(--darkblue);
+  background-color: var(--white);
+  border: solid 4px var(--darkblue);
   width: 266px;
   height: 45px;
   padding-left: 10px;
@@ -35,11 +35,11 @@ export const InputResponsive = styled.input`
 `;
 
 export const TextArea = styled.textarea`
-  background-color: var(--black);
-  border: none;
-  font-family: "Bebas Neue", cursive;
+  background-color: var(--white);
+  border: solid 4px var(--darkblue);
+  font-family: "Montserrat Regular", cursive;
   font-size: 18px;
-  color: var(--white);
+  color: var(--darkblue);
   width: 266px;
   height: 160px;
 

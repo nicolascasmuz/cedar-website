@@ -50,12 +50,6 @@ export function Header() {
         <a href="/">
           <Logo />
         </a>
-        <form className={styles["form"]} /* onSubmit={HandleSubmit} */>
-          <Input className={styles["input"]} type="text" name="query" />
-          <StraightButton color="#141414" width="100px">
-            Buscar
-          </StraightButton>
-        </form>
       </div>
       <input
         className={styles["input-check"]}
@@ -69,14 +63,6 @@ export function Header() {
           alt="search-loupe"
         />
       </label>
-      <form className={styles["form-responsive"]} /* onSubmit={HandleSubmit} */>
-        <InputResponsive
-          className={styles["input-search"]}
-          type="text"
-          name="query"
-          placeholder="Teclado Yamaha..."
-        />
-      </form>
       <input
         className={styles["header__menu-input"]}
         type="checkbox"
